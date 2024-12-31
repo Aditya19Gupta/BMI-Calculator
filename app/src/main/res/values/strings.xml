@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="weightHint">Weight(kg)</string>
+    <string name="heightHint">Height(ft)</string>
+    <string name="enter_weight">Weight(kg)</string>
+    <string name="enter_height">Weight(ft)</string>
+    <string name="heightInHint">Height(in)</string>
+</resources>

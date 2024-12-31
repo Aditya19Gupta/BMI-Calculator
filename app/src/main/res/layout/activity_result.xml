@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resultMain"
+    android:background="@color/cardview_dark_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="BMI Calculator"
+        app:titleTextColor="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cornerRadius="100dp"
+        android:text="Done"
+        android:textSize="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#240101"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:elevation="1000dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#CF27272A">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Id proof"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:background="#000"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_ids"
+            />
+    </LinearLayout>
+    <AutoCompleteTextView
+        android:id="@+id/tech_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select tech"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="#CF27272A"
+
+        />
+    <ListView
+        android:id="@+id/list_of_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#CF27272A"
+
+        />
+
+
+</LinearLayout>

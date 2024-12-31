@@ -1,0 +1,15 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"> <!-- You can change to 'oval' for circular shapes -->
+
+    <!-- Background color -->
+    <solid android:color="#fff" /> <!-- Button background color -->
+
+    <!-- Border (stroke) -->
+    <stroke
+        android:width="20dp"
+    android:color="@android:color/white" />
+
+    <!-- Corner radius for rounded corners (optional) -->
+    <corners android:radius="500dp" />
+
+</shape>
